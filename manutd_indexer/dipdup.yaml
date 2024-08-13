@@ -17,19 +17,19 @@ hasura:
   rest: false
 
 contracts:
-  mainnet:
-    kind: tezos
-    address: ${CONTRACT_MAINNET}
-    typename: mu_minter
+#  mainnet:
+#    kind: tezos
+#    address: ${CONTRACT_MAINNET}
+#    typename: mu_minter
   ghostnet:
     kind: tezos
     address: ${CONTRACT_GHOSTNET}
     typename: mu_minter
 
 datasources:
-  mainnet:
-    kind: tezos.tzkt
-    url: https://api.tzkt.io
+#  mainnet:
+#    kind: tezos.tzkt
+#    url: https://api.tzkt.io
   ghostnet:
     kind: tezos.tzkt
     url: ${TZKT_URL:-https://api.ghostnet.tzkt.io}
